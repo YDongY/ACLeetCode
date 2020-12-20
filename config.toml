@@ -77,7 +77,7 @@ disablePathToLower = true
 [params.gitalk] 
     clientID = "bb9d0e444eb4e80bc465" # Your client ID
     clientSecret = "0beb8de990cca4b939b166fe8e433d4d54657607" # Your client secret
-    repo = "LeeoCode" # The repo to store comments
+    repo = "LeetCode" # The repo to store comments
     owner = "YDongY" # Your GitHub ID
     admin= "YDongY" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
     id= "location.pathname" # The unique id of the page.
