@@ -75,8 +75,8 @@ disablePathToLower = true
   enableGitalk = true
 
 [params.gitalk] 
-    clientID = "bb9d0e444eb4e80bc465" # Your client ID
-    clientSecret = "44f3c6635664c9dabaf507b377efda5d9b95981c" # Your client secret
+    clientID = "20f9a3493f76550caa91" # Your client ID
+    clientSecret = "678d49ecd1430f78cd134c22b69797e9f31dbe72" # Your client secret
     repo = "LeetCode" # The repo to store comments
     owner = "YDongY" # Your GitHub ID
     admin= "YDongY" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
