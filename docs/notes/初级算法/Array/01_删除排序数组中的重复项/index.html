@@ -5,21 +5,25 @@
   <meta name="generator" content="Hugo 0.79.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="LeetCode 刷题 #   郑重声明：本项目所有题目均来源于 LeetCode
- ">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="LeetCode 刷题" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ydongy.github.io/LeetCode/" />
+<meta name="description" content="1. 删除排序数组中的重复项 #   给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+示例 1:
+给定数组 nums = [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。 示例 2:
+给定 nums = [0,0,1,1,1,2,2,3,3,4], 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。 你不需要考虑数组中超出新长度后面的元素。 ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
+<meta property="og:description" content="1. 删除排序数组中的重复项 #   给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+示例 1:
+给定数组 nums = [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。 示例 2:
+给定 nums = [0,0,1,1,1,2,2,3,3,4], 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。 你不需要考虑数组中超出新长度后面的元素。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
 
-<title>LeetCode 刷题 | LeetCode</title>
+<title>01 删除排序数组中的重复项 | LeetCode</title>
 <link rel="manifest" href="/LeetCode/manifest.json">
 <link rel="icon" href="/LeetCode/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/LeetCode/book.min.09a284f5a03730d86dde350d2c062b1514e48fdfebba7763941c0674ef65748f.css" integrity="sha256-CaKE9aA3MNht3jUNLAYrFRTkj9/rundjlBwGdO9ldI8=">
 <script defer src="/LeetCode/en.search.min.6370dbfefab28051a1ba3b383d72f88d8a54d987f699c5d42e0fb9d2dc88b522.js" integrity="sha256-Y3Db/vqygFGhujs4PXL4jYpU2Yf2mcXULg&#43;50tyItSI="></script>
 
 <script defer src="/LeetCode/sw.min.7ce234d42402d5ddc3b4c37b5fd52679c458ffe6919950d067ded5fc7e39c4c0.js" integrity="sha256-fOI01CQC1d3DtMN7X9UmecRY/&#43;aRmVDQZ97V/H45xMA="></script>
-<link rel="alternate" type="application/rss+xml" href="https://ydongy.github.io/LeetCode/index.xml" title="LeetCode" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -85,7 +89,7 @@ https://github.com/alex-shpak/hugo-book
   <a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/">数组</a>
 <ul>
 <li>
-  <a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/">1. 删除排序数组中的重复项</a></li>
+  <a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/"class=active>1. 删除排序数组中的重复项</a></li>
 </ul>
 </li>
 <li>
@@ -126,7 +130,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/LeetCode/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>LeetCode 刷题</strong>
+  <strong>01 删除排序数组中的重复项</strong>
 
   <label for="toc-control">
     
@@ -141,7 +145,7 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#leetcode-刷题">LeetCode 刷题</a></li>
+    <li><a href="#1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m"><a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a></a></li>
   </ul>
 </nav>
 
@@ -153,15 +157,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="leetcode-刷题">
-  LeetCode 刷题
-  <a class="anchor" href="#leetcode-%e5%88%b7%e9%a2%98">#</a>
+  <article class="markdown"><h2 id="1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m">
+  
+  <a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a>
+  <a class="anchor" href="#1-%e5%88%a0%e9%99%a4%e6%8e%92%e5%ba%8f%e6%95%b0%e7%bb%84%e4%b8%ad%e7%9a%84%e9%87%8d%e5%a4%8d%e9%a1%b9httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m">#</a>
 </h2>
-<blockquote>
-<p>郑重声明：本项目所有题目均来源于 
-  <a href="https://leetcode-cn.com/problemset/all/">LeetCode</a></p>
-</blockquote>
-</article>
+<hr>
+<p>给定一个排序数组，你需要在<strong>原地</strong>删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+不要使用额外的数组空间，你必须在<strong>原地</strong>修改输入数组 并在使用 O(1) 额外空间的条件下完成。</p>
+<p>示例 1:</p>
+<pre><code>给定数组 nums = [1,1,2], 
+
+函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+
+你不需要考虑数组中超出新长度后面的元素。
+</code></pre><p>示例 2:</p>
+<pre><code>给定 nums = [0,0,1,1,1,2,2,3,3,4],
+
+函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
+
+你不需要考虑数组中超出新长度后面的元素。
+</code></pre></article>
  
       
 
@@ -171,16 +187,10 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/YDongY/LeetCode/commit/105bb5c443ba6c6994ad1029add751ebb2ef4531" title='Last modified by YDongY | Dec 20, 2020' target="_blank" rel="noopener">
-      <img src="/LeetCode/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Dec 20, 2020</span>
-    </a>
-  </div>
-
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/YDongY/LeetCode/blob/master/content//_index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/YDongY/LeetCode/blob/master/content//notes/%e5%88%9d%e7%ba%a7%e7%ae%97%e6%b3%95/Array/01_%e5%88%a0%e9%99%a4%e6%8e%92%e5%ba%8f%e6%95%b0%e7%bb%84%e4%b8%ad%e7%9a%84%e9%87%8d%e5%a4%8d%e9%a1%b9.md" target="_blank" rel="noopener">
       <img src="/LeetCode/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -231,7 +241,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#leetcode-刷题">LeetCode 刷题</a></li>
+    <li><a href="#1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m"><a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a></a></li>
   </ul>
 </nav>
 

@@ -1,0 +1,1 @@
+if(navigator.serviceWorker){navigator.serviceWorker.register("/LeetCode/sw.js",{scope:"/LeetCode/"});}

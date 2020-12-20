@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LeetCode 刷题 on LeetCode</title>
-    <link>https://ydongy.github.io/LeetCode/</link>
-    <description>Recent content in LeetCode 刷题 on LeetCode</description>
+    <title>数组 on LeetCode</title>
+    <link>https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/</link>
+    <description>Recent content in 数组 on LeetCode</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="https://ydongy.github.io/LeetCode/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>专项训练</title>
-      <link>https://ydongy.github.io/LeetCode/notes/%E4%B8%93%E9%A1%B9%E8%AE%AD%E7%BB%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ydongy.github.io/LeetCode/notes/%E4%B8%93%E9%A1%B9%E8%AE%AD%E7%BB%83/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>字符串</title>
-      <link>https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Strings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Strings/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-CN</language><atom:link href="https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/Array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/</link>
