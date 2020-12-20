@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.79.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1. 删除排序数组中的重复项 #   给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+示例 1:
+给定数组 nums = [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。 示例 2:
+给定 nums = [0,0,1,1,1,2,2,3,3,4], 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。 你不需要考虑数组中超出新长度后面的元素。 ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
+<meta property="og:description" content="1. 删除排序数组中的重复项 #   给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原地修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+示例 1:
+给定数组 nums = [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。 示例 2:
+给定 nums = [0,0,1,1,1,2,2,3,3,4], 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。 你不需要考虑数组中超出新长度后面的元素。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ydongy.github.io/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
+
+<title>01 删除排序数组中的重复项 | LeetCode</title>
+<link rel="manifest" href="/LeetCode/manifest.json">
+<link rel="icon" href="/LeetCode/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/LeetCode/book.min.09a284f5a03730d86dde350d2c062b1514e48fdfebba7763941c0674ef65748f.css" integrity="sha256-CaKE9aA3MNht3jUNLAYrFRTkj9/rundjlBwGdO9ldI8=">
+<script defer src="/LeetCode/en.search.min.6ba8d1be955110d8360d25a0f0ca1b7fd5f719dedb9a5d730eddf1087801be7f.js" integrity="sha256-a6jRvpVRENg2DSWg8Mobf9X3Gd7bml1zDt3xCHgBvn8="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/LeetCode"><img src="/LeetCode/logo.png" alt="Logo" /><span>LeetCode</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.ydongy.cn" target="_blank" rel="noopener">
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/YDongY/LeetCode" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  <hr>
+<ul>
+<li><a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"><strong>一、初级算法</strong></a>
+<ul>
+<li><a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/array/">数组</a>
+<ul>
+<li><a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/array/01_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/"class=active>1. 删除排序数组中的重复项</a></li>
+</ul>
+</li>
+<li><a href="/LeetCode/notes/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/strings/">字符串</a></li>
+</ul>
+</li>
+</ul>
+<p><!-- raw HTML omitted --></p>
+<ul>
+<li><a href="/LeetCode/notes/%E4%B8%93%E9%A1%B9%E8%AE%AD%E7%BB%83/"><strong>二、专项训练</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/LeetCode/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>01 删除排序数组中的重复项</strong>
+
+  <label for="toc-control">
+    
+    <img src="/LeetCode/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m"><a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a></a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m">
+  <a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a>
+  <a class="anchor" href="#1-%e5%88%a0%e9%99%a4%e6%8e%92%e5%ba%8f%e6%95%b0%e7%bb%84%e4%b8%ad%e7%9a%84%e9%87%8d%e5%a4%8d%e9%a1%b9httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m">#</a>
+</h2>
+<hr>
+<p>给定一个排序数组，你需要在<strong>原地</strong>删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+不要使用额外的数组空间，你必须在<strong>原地</strong>修改输入数组 并在使用 O(1) 额外空间的条件下完成。</p>
+<p>示例 1:</p>
+<pre><code>给定数组 nums = [1,1,2], 
+
+函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+
+你不需要考虑数组中超出新长度后面的元素。
+</code></pre><p>示例 2:</p>
+<pre><code>给定 nums = [0,0,1,1,1,2,2,3,3,4],
+
+函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
+
+你不需要考虑数组中超出新长度后面的元素。
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/YDongY/LeetCode/blob/master/content//notes/%e5%88%9d%e7%ba%a7%e7%ae%97%e6%b3%95/Array/01_%e5%88%a0%e9%99%a4%e6%8e%92%e5%ba%8f%e6%95%b0%e7%bb%84%e4%b8%ad%e7%9a%84%e9%87%8d%e5%a4%8d%e9%a1%b9.md" target="_blank" rel="noopener">
+      <img src="/LeetCode/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'bb9d0e444eb4e80bc465',
+    clientSecret: '0beb8de990cca4b939b166fe8e433d4d54657607 ',
+    repo: 'LeeoCode',
+    owner: 'YDongY',
+    admin: ['YDongY'],
+    id: location.pathname, 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-删除排序数组中的重复项httpsleetcode-cncomleetbookreadtop-interview-questions-easyx2gy9m"><a href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/">1. 删除排序数组中的重复项</a></a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

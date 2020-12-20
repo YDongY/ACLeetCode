@@ -2,6 +2,28 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+# ------------ hugo --------------- #
+# Hugo default output directory
+public/
+resources/
+/exampleSite/resources/
+
+node_modules/
+build/
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
+
+# Linux
+.directory
+
 # -------------CMD： gi python > .gitignore --------------#
 .idea/
 

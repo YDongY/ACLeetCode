@@ -1,0 +1,59 @@
+baseURL = "https://ydongy.github.io/LeetCode/"
+languageCode = "zh-CN"
+title = "LeetCode"
+publishDir = "docs"
+theme="book"
+
+enableEmoji=true
+enableGitInfo = true
+
+[menu]
+[[menu.before]]
+  name = "Blog"
+  url = "https://www.ydongy.cn"
+  weight = 10
+[[menu.before]]
+  name = "Github"
+  url = "https://github.com/YDongY/LeetCode"
+  weight = 20
+
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  BookTheme = 'auto'
+
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC = true
+
+  # (Optional, default none) Set the path to a logo for the book. If the logo is
+  # /static/logo.png then the path would be 'logo.png'
+  BookLogo = 'logo.png'
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  BookMenuBundle = '/menu'
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo = 'https://github.com/YDongY/LeetCode'
+
+  # Enable 'Edit this page' links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Path must point to the site directory.
+  BookEditPath = 'blob/master/content'
+
+  enableGitalk = true
+
+[params.gitalk] 
+    clientID = "bb9d0e444eb4e80bc465" # Your client ID
+    clientSecret = "0beb8de990cca4b939b166fe8e433d4d54657607 " # Your client secret
+    repo = "LeeoCode" # The repo to store comments
+    owner = "YDongY" # Your GitHub ID
+    admin= "YDongY" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
+    id= "location.pathname" # The unique id of the page.
+    labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage= 15 # Pagination size, with maximum 100.
+    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually= false # If it is 'false', it is auto to make a Github issue when the administrators login.
+    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
